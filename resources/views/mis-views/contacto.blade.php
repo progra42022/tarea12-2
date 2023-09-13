@@ -1,5 +1,6 @@
 @extends('my-layouts.my-app')
 @section('content')
+<h1>{{ __('messages.welcome') }}</h1>
     <form method="POST">
         @csrf
         @if ($errors->any())
